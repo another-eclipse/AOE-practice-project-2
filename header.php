@@ -9,6 +9,7 @@
     ?>
 </head>
 
+
 <header>
     <div class="logo">
         <?php
@@ -31,21 +32,21 @@
                 );
             ?>
         </div>
-
-        <div class="language">
-                <img src="<?php echo get_template_directory_uri(); ?> . 'assets/images/language.png'" alt=""> 
-                <img src="<?php echo get_template_directory_uri(); ?> . 'assets/images/arrow.png'" alt=""> 
-        </div>
-
-        <div class="nav-button">
-            <a href="#">Book free session</a>
-        </div>
     </nav>
+
+    <div class="language">
+                <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/language.svg'" alt=""> 
+                <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/arrow.svg'" alt=""> 
+                <div class="nav-button">
+                    <a href="#">Book free session</a>
+                </div>
+    </div>
+
+  
 
 
 </header>
 
 <body>
-
 
     

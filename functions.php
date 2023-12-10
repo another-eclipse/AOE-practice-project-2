@@ -21,7 +21,7 @@ add_action('init', 'myzone_menus');
 
 function myzone_register_styles() {
     $version = wp_get_theme()->get('Version');
-    wp_enqueue_style('myzone-style', get_template_directory_uri() . "assets/css/style.css", array('myzone-style'), $version, 'all');
+    wp_enqueue_style('myzone-style', get_template_directory_uri() . "/assets/css/style.css", $version, 'all');
     wp_enqueue_style('myzone-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css', '5.3.0.', 'all');
 };
 
@@ -29,7 +29,7 @@ add_action('wp_enqueue_scripts', 'myzone_register_styles');
 
 function myzone_register_script() {
     wp_enqueue_script('myzone-boot', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css', '5.3.0.', true);
-    wp_enqueue_script('main-js', get_template_directory_uri() . "assets/js/main.js", "1.0", true);
+    wp_enqueue_script('main-js', get_template_directory_uri() . "/assets/js/main.js", "1.0", true);
 };
 
 add_action('wp_enqueue_scripts', 'myzone_register_script');
@@ -42,3 +42,6 @@ if(function_exists('acf_add_options_page')){
         ) 
     );
 };
+
+
+?>

@@ -156,22 +156,25 @@
 
 <section class="testimonials">
     <h2><?php echo get_field('testimonials_title'); ?></h2>
-    <swiper-container>
-    <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-        <?php foreach(get_field('testimonials_repeater') as $item): ?>
-      <div class="swiper-slide">
-        <p class="testimonial-text"><?php echo $item['testimonial_text']; ?></p>
-        <div class="author-info">
-            <p class="author"><?php echo $item['testimonial_author']; ?></p>
-            <p class="author-title"><?php echo $item['testimonial_author_title']; ?></p>
+    <div class="swiper-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <?php foreach(get_field('testimonials_repeater') as $item): ?>
+                <div class="swiper-slide">
+                    <p class="testimonial-text"><?php echo $item['testimonial_text']; ?></p>
+                        <div class="author-info">
+                            <p class="author"><?php echo $item['testimonial_author']; ?></p>
+                            <p class="author-title"><?php echo $item['testimonial_author_title']; ?></p>   
+                        </div>    
+                </div>
+                <?php endforeach; ?>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            
         </div>
-      </div>
-        <?php endforeach; ?>
+        
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
-</swiper-container>
 </section>
 
 </main>

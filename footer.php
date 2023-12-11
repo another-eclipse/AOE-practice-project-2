@@ -10,18 +10,17 @@ $footer_groups = get_field('footer_groups', 'options');
 <script type="module" >
   import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
-  const swiper = new Swiper('.swiper', {
-  autoplay: {
-    delay: 5000,
-  },
-  loop: true,
-  speed: 1000,
-    spaceBetween: 100,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true
-  },
+const swiper = new Swiper('.swiper', {
+autoplay: {
+  delay: 1500,
+},
+effect: 'fade',
+fadeEffect: {
+  crossFade: true,
+},
+loop: true,
+speed: 1000,
+  spaceBetween: 100,
 });
 
 

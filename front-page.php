@@ -156,7 +156,7 @@
 
 <section class="testimonials">
     <h2><?php echo get_field('testimonials_title'); ?></h2>
-    <div class="swiper-container">
+    <swiper-container>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <?php foreach(get_field('testimonials_repeater') as $item): ?>
@@ -169,12 +169,9 @@
                 </div>
                 <?php endforeach; ?>
             </div>
-            
             <div class="swiper-pagination"></div>
-            
         </div>
-        
-    </div>
+    </swiper-container>
 </section>
 
 </main>

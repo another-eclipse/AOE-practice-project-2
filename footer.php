@@ -21,6 +21,11 @@ fadeEffect: {
 loop: true,
 speed: 1000,
   spaceBetween: 100,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  }
 });
 
 

@@ -700,7 +700,8 @@ swiper-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10%;
+  height: 500px;
+  padding: 5%;
 }
 
 .banner-container {
@@ -709,6 +710,10 @@ swiper-container {
 
 .banner-container * {
   padding: 1rem;
+}
+
+.banner-container div {
+  margin-bottom: 3%;
 }
 
 .service-button {
@@ -721,6 +726,8 @@ swiper-container {
   border-radius: 5px;
   padding: 1rem;
   transition: 0.3s ease-in-out;
+  width: 40%;
+  display: inline-block;
 }
 
 .service-button:hover {

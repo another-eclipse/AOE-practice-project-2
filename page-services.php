@@ -35,8 +35,10 @@
 
 <section class="service-banner">
     <div class="banner-container">
-        <h2><?php echo get_field('service_banner_title'); ?></h2>
-        <p><?php echo get_field('service_banner_text'); ?></p>
+        <div>
+            <h2><?php echo get_field('service_banner_title'); ?></h2>
+            <p><?php echo get_field('service_banner_text'); ?></p>
+        </div>
         <a href="<?php echo get_field('service_banner_button'); ?>" class="service-button">Launch Assessment</a>
     </div>
 </section>

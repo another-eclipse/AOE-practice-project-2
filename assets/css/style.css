@@ -155,6 +155,10 @@ p {
     color: #404040;
 }
 
+p:empty {
+  display: none;
+}
+
 
 
 #navmenu a {
@@ -193,7 +197,9 @@ p {
     border-radius: 5px;
     padding: 0.6rem;
     margin-left: 1rem;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .logo img {
     height: 32px;
@@ -224,6 +230,7 @@ p {
 
 .hero-text-group a {
     background: #3E96B9;
+    border: solid #3E96B9 3px;
     color: white;
     text-transform:uppercase;
     text-decoration: none;
@@ -232,6 +239,13 @@ p {
     font-size: 16px;
     border-radius: 5px;
     padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-text-group a:hover, .bottom-text a:hover {
+  background: white;
+  color:#3E96B9;
+  border: solid #3E96B9 3px;
 }
 
 .hero-text-group p {
@@ -464,6 +478,8 @@ p {
   border-radius: 5px;
   padding: 1rem;
   width: 30%;
+  border: solid #3E96B9 3px;
+  transition: all 0.3s ease-in-out;
 }
 
 .testimonials {
@@ -662,8 +678,8 @@ swiper-container {
   font-size: 18px;
   line-height: 26px;
   color: #404040;
-  
 }
+
 
 .coaching-container {
   width: 50%;
@@ -672,6 +688,7 @@ swiper-container {
 }
 
 .services-container a {
+  appearance: button;
   background: white;
   color: #3E96B9;
   text-transform:uppercase;
@@ -735,4 +752,142 @@ swiper-container {
   color: #3E96B9;
   border-color: #3E96B9;
   border-style: solid;
+}
+
+/* Resources */
+
+.resources {
+  padding: 10%;
+  display: grid;
+  text-align: left;
+}
+
+.resource-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p.list-subtitle {
+  font-family: 'Gelion';
+  color:#3E96B9;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.resource-list {
+  padding: 5rem;  
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10%;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.resource-title {
+  padding-bottom: 3rem;
+}
+
+.works p {
+  font-family: 'Gelion';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.authors p {
+  font-size: 14px;
+  color: rgba(134, 134, 140, 1);
+}
+
+/* About Me */
+
+.text-and-image {
+  display:flex;
+  margin: 10%;
+  gap: 10%;
+}
+
+.text-and-image img {
+  box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.text-container {
+  text-align: left;
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.columns {
+  background: linear-gradient(83.92deg, #EDE4E4 -4.78%, #F4F2EF 49.05%, #CEE8EF 113.33%);
+  display: grid;
+}
+
+.columns-container {
+  display: flex;
+  flex-direction: column;
+  margin:10%;
+  align-items: center;
+}
+
+.columns-text {
+  column-count: 2;
+    column-gap: 5%;
+  width: 80%;
+  text-align: left;
+  padding-top: 10%;
+}
+
+.columns img {
+  width: 100%;
+}
+
+.certification {
+  display: grid;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+  padding: 5%;
+  gap: 10%;
+  box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.08);
+  height: auto;
+  margin-top: -10%;
+  background: white;
+  padding-bottom: 10%;
+}
+
+.certs {
+  display: grid;
+}
+
+.cert-text {
+  display: flex;
+}
+
+.single-cert {
+  margin-bottom: 5%;
+}
+
+.cert-text img {
+  height: 132px;
+  width: 132px;
+}
+
+.pic-and-text {
+  margin: 10%;
+  display: flex;
+  gap: 10%;
+}
+
+.pic-and-text img {
+  box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
 }

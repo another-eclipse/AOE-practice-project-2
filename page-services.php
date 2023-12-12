@@ -27,7 +27,7 @@
                 <h3><?php echo $item['service_headliner']; ?></h3>
                 <h2><?php echo $item['service_title']; ?></h2>
                 <p><?php echo $item['service_description']; ?></p>
-                <a href="<?php echo $item['service_button']; ?>">Launch Assessment</a>
+                <a class="button" href="<?php echo $item['service_button']; ?>">Launch Assessment</a>
             </div>
         <?php endforeach; ?>
     </div>

@@ -891,3 +891,95 @@ p.list-subtitle {
   box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
 }
+
+/* Connect */
+
+.contact-container {
+  display: flex;
+  position: relative;
+  gap: 2rem;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  text-align: left;
+  gap: 10px;
+}
+
+.contact-image img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.contact-container form {
+  display: grid;
+}
+
+.contact {
+  margin: 10%;
+}
+
+.af-fields {
+  display: grid;
+  grid-template-areas: "a b"
+                        "c d"
+                        "e e"
+                        "f f";
+}
+
+.af-field-type-textarea {
+  grid-area: e;
+}
+
+.acf-button, form a {
+  background: #3E96B9;
+  color: white;
+  text-transform:uppercase;
+  text-decoration: none;
+  border: solid 3px  #3E96B9;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+  width: 60%;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.acf-button:hover, form a:hover {
+  background: #3e96b900;
+  color: #3E96B9;
+  border-color: #3E96B9;
+  border-style: solid;
+}
+
+.acf-field {
+  border-top: none !important;
+  padding: 0 16px 16px 0 !important;
+}
+
+.af-submit {
+  padding: 0 !important;
+}
+
+.af-field input, .af-field textarea {
+  background: rgba(246, 244, 239, 1);
+  padding: 1rem !important;
+  border: none !important;
+  border-radius: 5px;
+  box-shadow: inset 0em -0.1em 0em #3E96B9 !important;
+  resize: none !important;
+}
+
+.af-field input:focus, .af-field textarea:focus {
+  outline: none;
+}
+
+.af-label label {
+  display: none !important;
+}
+

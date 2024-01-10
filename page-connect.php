@@ -11,11 +11,11 @@
 <section class="contact">
     <div class="contact-container">
         <div class="contact-text">
-            <h2 class="hide"><?php echo get_field('contact_title'); ?></h2>
-            <p class="hide"><?php echo get_field('contact_subtitle'); ?></p>
-            <?php echo do_shortcode('[advanced_form form="form_659c62cecb06d"]'); ?>
+            <h2 class="to-be-hidden"><?php echo get_field('contact_title'); ?></h2>
+            <p class="to-be-hidden"><?php echo get_field('contact_subtitle'); ?></p>
+            <?php advanced_form( 'form_659c62cecb06d', array( 'redirect' => 'http://localhost/myzone/myzone/wordpress/thank-you/' ) ); ?>
         </div>
-        <div class="contact-image hide">
+        <div class="contact-image to-be-hidden">
             <img src="<?php echo get_field('contact_image'); ?>" alt="">
         </div>
     </div>
